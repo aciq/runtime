@@ -99,8 +99,7 @@ jobs:
   pool:
     name: NetCore-Public
     demands: 
-    - ImageOverride -equals 1es-windows-2022-open
-    - ImageVersionOverride -equals 20220911.1
+    - ImageOverride -equals windows.vs2022.amd64.open
 
   steps:
   - checkout: self
