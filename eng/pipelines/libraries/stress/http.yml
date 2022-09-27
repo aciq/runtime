@@ -98,7 +98,9 @@ jobs:
     DUMPS_SHARE_MOUNT_ROOT: "C:/dumps-share"
   pool:
     name: NetCore-Public
-    demands: ImageOverride -equals 1es-windows-2022-open
+    demands: 
+    - ImageOverride -equals 1es-windows-2022-open
+    - ImageVersionOverride equals "20220911.1"
 
   steps:
   - checkout: self
